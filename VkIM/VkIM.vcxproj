@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release 2000|Win32">
+      <Configuration>Release 2000</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46A3AF05-AC6E-4B7D-8E9B-25DC162ADF32}</ProjectGuid>
+    <RootNamespace>VkIM</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 2000|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release 2000|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release 2000|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release 2000|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release 2000|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release 2000|Win32'">C:\Program Files %28x86%29\Microsoft SDKs\Windows\v7.0A\Include;C:\Program Files %28x86%29\Microsoft Visual Studio 9.0\VC\atlmfc\include;C:\Program Files %28x86%29\Microsoft Visual Studio 9.0\VC\include</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release 2000|Win32'">C:\Program Files %28x86%29\Microsoft SDKs\Windows\v7.0A\Lib;C:\Program Files %28x86%29\Microsoft Visual Studio 9.0\VC\atlmfc\lib;C:\Program Files %28x86%29\Microsoft Visual Studio 9.0\VC\lib</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\Visual Leak Detector\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <OpenMPSupport>
+      </OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <EnableUAC>false</EnableUAC>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release 2000|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_RLS2000;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalOptions>/SUBSYSTEM:WINDOWS,5.0 %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="BrowserDlg.cpp" />
+    <ClCompile Include="CaptchaDlg.cpp" />
+    <ClCompile Include="ContactListCtrl.cpp" />
+    <ClCompile Include="EpicFailDlg.cpp" />
+    <ClCompile Include="IEUIHandler.cpp" />
+    <ClCompile Include="jsonmain.cpp" />
+    <ClCompile Include="JSONNode.cpp" />
+    <ClCompile Include="JSON_Worker.cpp" />
+    <ClCompile Include="LoadingDlg.cpp" />
+    <ClCompile Include="MessageBoard.cpp" />
+    <ClCompile Include="MyStackWalker.cpp" />
+    <ClCompile Include="NotificationDlg.cpp" />
+    <ClCompile Include="OpenTalkDlg.cpp" />
+    <ClCompile Include="SearchEdit.cpp" />
+    <ClCompile Include="SetFListsDlg.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="SettingsCommonDlg.cpp" />
+    <ClCompile Include="SettingsConnDlg.cpp" />
+    <ClCompile Include="SkinButton.cpp" />
+    <ClCompile Include="ClosableTabCtrl.cpp" />
+    <ClCompile Include="CLTree.cpp" />
+    <ClCompile Include="Connector.cpp" />
+    <ClCompile Include="CryptMD5.cpp" />
+    <ClCompile Include="EnBitmap.cpp" />
+    <ClCompile Include="ExEdit.cpp" />
+    <ClCompile Include="explorer1.cpp" />
+    <ClCompile Include="Lang.cpp" />
+    <ClCompile Include="SettingsDlg.cpp" />
+    <ClCompile Include="SettingsNotifyDlg.cpp" />
+    <ClCompile Include="Skin.cpp" />
+    <ClCompile Include="StackWalker.cpp" />
+    <ClCompile Include="StatusDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release 2000|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TalkDlg.cpp" />
+    <ClCompile Include="TalkTab.cpp" />
+    <ClCompile Include="Tooltip.cpp" />
+    <ClCompile Include="TransparentStatic.cpp" />
+    <ClCompile Include="UserInfoTip.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="VkAPIRequest.cpp" />
+    <ClCompile Include="VkIM.cpp" />
+    <ClCompile Include="VkIMDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="base64.h" />
+    <ClInclude Include="BrowserDlg.h" />
+    <ClInclude Include="CaptchaDlg.h" />
+    <ClInclude Include="ContactListCtrl.h" />
+    <ClInclude Include="EpicFailDlg.h" />
+    <ClInclude Include="IEUIHandler.h" />
+    <ClInclude Include="LoadingDlg.h" />
+    <ClInclude Include="MessageBoard.h" />
+    <ClInclude Include="MyStackWalker.h" />
+    <ClInclude Include="NotificationDlg.h" />
+    <ClInclude Include="OpenTalkDlg.h" />
+    <ClInclude Include="SearchEdit.h" />
+    <ClInclude Include="SetFListsDlg.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="SettingsCommonDlg.h" />
+    <ClInclude Include="SettingsConnDlg.h" />
+    <ClInclude Include="SkinButton.h" />
+    <ClInclude Include="ClosableTabCtrl.h" />
+    <ClInclude Include="CLTree.h" />
+    <ClInclude Include="Connector.h" />
+    <ClInclude Include="EnBitmap.h" />
+    <ClInclude Include="ExEdit.h" />
+    <ClInclude Include="explorer1.h" />
+    <ClInclude Include="JSON_Defs.h" />
+    <ClInclude Include="JSON_StringConv.h" />
+    <ClInclude Include="JSON_Strings.h" />
+    <ClInclude Include="JSON_Worker.h" />
+    <ClInclude Include="JSONChildren.h" />
+    <ClInclude Include="jsonmain.h" />
+    <ClInclude Include="JSONNode.h" />
+    <ClInclude Include="Lang.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SettingsDlg.h" />
+    <ClInclude Include="SettingsNotifyDlg.h" />
+    <ClInclude Include="Skin.h" />
+    <ClInclude Include="StackWalker.h" />
+    <ClInclude Include="StatusDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TalkDlg.h" />
+    <ClInclude Include="TalkTab.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tooltip.h" />
+    <ClInclude Include="TransparentStatic.h" />
+    <ClInclude Include="UserInfoTip.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="VkAPIRequest.h" />
+    <ClInclude Include="VkIM.h" />
+    <ClInclude Include="VkIMDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Skins\VK Style\cnt_events.ico" />
+    <None Include="res\1.bmp" />
+    <None Include="res\about.bmp" />
+    <None Include="res\att_audio.bmp" />
+    <None Include="res\att_photo.bmp" />
+    <None Include="res\att_video.bmp" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\browse.ico" />
+    <None Include="res\fav_chat.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\play.ico" />
+    <None Include="res\tray_connected.ico" />
+    <None Include="res\tray_disconnected.ico" />
+    <None Include="res\tree_closed.bmp" />
+    <None Include="res\tree_open.bmp" />
+    <None Include="res\VkIM.ico" />
+    <None Include="res\VkIM.rc2" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\wbuttons.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VkIM.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="VkIM.rc" _x007B_8856F961-340A-11D0-A96B-00C04FD705A2_x007D_="CExplorer1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

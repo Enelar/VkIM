@@ -1,0 +1,598 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (unknown sub-lang: 0x0) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, 0x0
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,3,0
+ PRODUCTVERSION 1,2,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40000L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "001904e4"
+        BEGIN
+            VALUE "CompanyName", "Григорий Клюшников"
+            VALUE "FileDescription", "Vk.IM - Быстрые сообщения ВКонтакте"
+            VALUE "FileVersion", "1.2.3.0"
+            VALUE "InternalName", "VkIM.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2010"
+            VALUE "OriginalFilename", "VkIM.exe"
+            VALUE "ProductName", "Vk.IM"
+            VALUE "ProductVersion", "1.2.3.0"
+        END
+        BLOCK "040004b0"
+        BEGIN
+            VALUE "CompanyName", "Gregory Klyushnikov"
+            VALUE "FileDescription", "Vk.IM - VKontakte Instant Messenger"
+            VALUE "FileVersion", "1.2.3.0"
+            VALUE "InternalName", "VkIM.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2010-2011"
+            VALUE "OriginalFilename", "VkIM.exe"
+            VALUE "ProductName", "Vk.IM"
+            VALUE "ProductVersion", "1.2.3.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x19, 1252, 0x400, 1200
+    END
+END
+
+#endif    // Russian (unknown sub-lang: 0x0) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\VkIM.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VkIM.ico"
+IDI_TRAY_C              ICON                    "res\\tray_connected.ico"
+IDI_TRAY_D              ICON                    "res\\tray_disconnected.ico"
+IDI_PLAY                ICON                    "res\\play.ico"
+IDI_CHAT                ICON                    "res\\fav_chat.ico"
+IDI_BROWSE              ICON                    "res\\browse.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BROWSERDLG DIALOGEX 0, 0, 351, 210
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,0,0,352,210
+END
+
+IDD_TALKDLG DIALOGEX 0, 0, 321, 199
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",TCS_FIXEDWIDTH | TCS_OWNERDRAWFIXED,0,0,321,198,WS_EX_TRANSPARENT
+END
+
+IDD_TALKTAB DIALOGEX 0, 0, 319, 168
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_MSG_FIELD,0,104,319,40,ES_MULTILINE | ES_AUTOVSCROLL | NOT WS_BORDER | WS_VSCROLL
+    PUSHBUTTON      "Button1",IDC_SEND_BTN,249,146,64,17
+END
+
+IDD_VKIM_DIALOG DIALOGEX 0, 0, 137, 282
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_THICKFRAME
+CAPTION "VK_IM MAIN WINDOW"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_FULLROWSELECT | TVS_NOHSCROLL | TVS_NONEVENHEIGHT | WS_TABSTOP,0,54,137,213
+    CONTROL         "",IDC_AVA,"Static",SS_BITMAP | SS_NOTIFY | SS_CENTERIMAGE | WS_TABSTOP,2,2,33,31
+    CONTROL         "",IDC_USER_NAME,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX | SS_NOTIFY | WS_GROUP,38,4,95,11
+    EDITTEXT        IDC_CL_SEARCH,0,36,137,14,ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_USER_STATUS,38,16,95,12,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "",IDC_USER_STATUS_S,38,18,94,12,SS_NOTIFY | SS_ENDELLIPSIS
+END
+
+IDD_SETTINGSDLG DIALOGEX 0, 0, 328, 236
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,219,215,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,271,215,50,14
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,7,314,203
+END
+
+IDD_SETTINGSNOTIFYDLG DIALOGEX 0, 0, 309, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Static",IDC_ST_ONLINE,171,3,132,8
+    CONTROL         "Check2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,110,135,10
+    CONTROL         "Check3",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,110,130,10
+    LTEXT           "Static",IDC_ST_OFFLINE,6,97,124,8
+    CONTROL         "Check2",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,126,135,10
+    CONTROL         "Check3",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,126,130,10
+    EDITTEXT        IDC_EDIT1,284,28,25,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON1,151,107,14,14,BS_ICON
+    PUSHBUTTON      "",IDC_BUTTON2,137,107,14,14,BS_ICON
+    EDITTEXT        IDC_EDIT3,284,37,25,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON3,151,123,14,14,BS_ICON
+    PUSHBUTTON      "",IDC_BUTTON4,137,123,14,14,BS_ICON
+    LTEXT           "Static",IDC_NTF_GROUPS,6,43,162,8
+    PUSHBUTTON      "Button5",IDC_SEL_ALL,105,66,64,13
+    LTEXT           "Static",IDC_NEW_MSGS,171,97,138,9
+    CONTROL         "Check2",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,142,135,10
+    CONTROL         "Check3",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,142,130,10
+    EDITTEXT        IDC_EDIT4,284,44,25,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON7,151,139,14,14,BS_ICON
+    PUSHBUTTON      "",IDC_BUTTON8,137,139,14,14,BS_ICON
+    CONTROL         "Check8",IDC_HL_TBB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,30,155,10
+    CONTROL         "Check2",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,158,135,10
+    CONTROL         "Check3",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,158,130,10
+    EDITTEXT        IDC_EDIT5,284,53,25,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON9,151,155,14,14,BS_ICON
+    PUSHBUTTON      "",IDC_BUTTON10,137,155,14,14,BS_ICON
+    CONTROL         "",IDC_TREE2,"SysTreeView32",TVS_CHECKBOXES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,171,17,132,73
+    CONTROL         "Check11",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,1,155,10
+    COMBOBOX        IDC_COMBO1,88,14,35,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDC_UPD_S,125,17,34,8
+    RTEXT           "Static",IDC_UPD_I,0,17,84,8
+    CONTROL         "Check2",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,174,130,10
+    EDITTEXT        IDC_EDIT10,284,21,25,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_BUTTON5,151,171,14,14,BS_ICON
+    PUSHBUTTON      "",IDC_BUTTON6,137,171,14,14,BS_ICON
+    CONTROL         "Radio1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,5,53,104,10
+    CONTROL         "Radio1",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,5,68,97,10
+    CONTROL         "Radio1",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,5,84,104,10
+END
+
+IDD_LOADINGDLG DIALOGEX 0, 0, 168, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CTEXT           "Static",IDC_LOADING_TXT,7,88,154,8
+END
+
+IDD_NOTIFICATIONDLG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+EXSTYLE WS_EX_TOPMOST | WS_EX_NOACTIVATE
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_SETTINGSCONNDLG DIALOGEX 0, 0, 309, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CTEXT           "Static",IDC_PROXY_LABEL,0,13,309,8
+    RTEXT           "Static",IDC_PADDR_LABEL,6,48,73,10,SS_CENTERIMAGE | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT1,85,47,133,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    RTEXT           "Static",IDC_PPORT_LABEL,220,48,37,9,SS_CENTERIMAGE | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT2,262,47,40,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    RTEXT           "Static",IDC_PUNAME_LABEL,6,70,73,8,NOT WS_VISIBLE
+    RTEXT           "Static",IDC_PPASS_LABEL,6,91,73,9,SS_CENTERIMAGE | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT3,85,68,133,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT6,85,90,133,14,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CTEXT           "Static",IDC_VKAPI_LABEL,0,112,309,9
+    RTEXT           "Static",IDC_API_ADDR,6,128,73,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT7,85,127,133,14,ES_AUTOHSCROLL
+    RTEXT           "Static",IDC_API_PORT,220,128,37,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT8,262,127,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Static",IDC_API_REQ,5,150,73,9
+    EDITTEXT        IDC_EDIT9,85,148,217,14,ES_AUTOHSCROLL
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,5,28,78,10
+    PUSHBUTTON      "Button1",IDC_BUTTON1,46,62,217,14
+END
+
+IDD_SETTINGSCOMMONDLG DIALOGEX 0, 0, 309, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Static",IDC_SKIN_LABEL,3,131,148,8
+    COMBOBOX        IDC_COMBO1,3,144,146,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDC_LANG_LABEL,159,131,142,8
+    COMBOBOX        IDC_COMBO2,159,144,146,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,6,300,10
+    CONTROL         "Check1",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,22,300,10
+    CONTROL         "Check1",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,38,49,10
+    EDITTEXT        IDC_EDIT1,61,36,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,100,35,11,14
+    LTEXT           "Static",IDC_LH2,113,39,191,8
+    CONTROL         "Enter",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,4,117,56,10
+    CONTROL         "Ctrl+Enter",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,71,117,56,10
+    LTEXT           "Static",IDC_SK,3,104,162,9
+    CTEXT           "Static",IDC_NT,0,160,309,25
+    CONTROL         "Check2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,54,299,10
+    CONTROL         "Check2",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,70,299,10
+    CONTROL         "Check2",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,86,299,10
+END
+
+IDD_CAPTCHADLG DIALOGEX 0, 0, 252, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CAPTCHA"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,74,90,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,128,90,50,14
+    CTEXT           "Static",IDC_TITLE,7,7,238,8
+    EDITTEXT        IDC_EDIT1,78,71,94,14,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "",IDC_IMG,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE | SS_SUNKEN,49,20,153,45
+END
+
+IDD_MESSAGEBOARD DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_NOACTIVATE
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",0x0,0,0,319,199
+END
+
+IDD_ABOUTDLG DIALOGEX 0, 0, 233, 109
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,92,90,50,14
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,0,0,233,23
+    CTEXT           "Vk.IM 1.1.6\nVKontakte Instant Messenger",IDC_STATIC_TXT,0,29,233,18
+    CONTROL         "Copyright © <a>Gregory Klyushnikov</a> 2010",IDC_SYSLINK1,
+                    "SysLink",WS_TABSTOP,53,52,127,9
+    CTEXT           "All rights reserved.",IDC_STATIC,0,63,233,8
+    CONTROL         "<a>Официальная группа приложения</a>",IDC_SYSLINK2,
+                    "SysLink",WS_TABSTOP,58,76,117,8
+END
+
+IDD_OPENTALKDLG DIALOGEX 0, 0, 258, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,77,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,74,50,14
+    CTEXT           "Static",IDC_STATIC1,7,12,244,25
+    EDITTEXT        IDC_EDIT1,7,50,244,14,ES_AUTOHSCROLL
+END
+
+IDD_SETFLISTSDLG DIALOGEX 0, 0, 169, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,133,75,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,133,75,14
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_CHECKBOXES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,155,122
+END
+
+IDD_EPICFAIL DIALOGEX 0, 0, 320, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    ICON            "",IDC_ICON,7,8,20,20
+    CONTROL         "В приложении Vk.IM произошла критическая ошибка и оно будет закрыто.",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,35,8,277,20
+    EDITTEXT        IDC_EDIT1,7,63,306,68,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL
+    LTEXT           "Пожалуйста, сообщите о данной ошибке автору приложения. Опишите действия, приводящие к возникновению ошибки и скопируйте технические данные из поля ниже.",IDC_STATIC,7,38,306,23
+    PUSHBUTTON      "Завершить",IDC_BUTTON1,7,137,111,14
+    PUSHBUTTON      "Перезапустить",IDC_BUTTON2,202,137,111,14
+END
+
+IDD_STATUS DIALOGEX 0, 0, 255, 60
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,4,4,246,34,ES_MULTILINE | ES_AUTOVSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "Button1",IDC_BUTTON1,200,42,50,14
+    PUSHBUTTON      "Button2",IDC_BUTTON2,146,42,50,14
+    LTEXT           "Static",IDC_ST,8,45,115,8,SS_NOTIFY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_BROWSERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_TALKDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_TALKTAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+    END
+
+    IDD_VKIM_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 136
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_SETTINGSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_SETTINGSNOTIFYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_LOADINGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_NOTIFICATIONDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_SETTINGSCONNDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_SETTINGSCOMMONDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_CAPTCHADLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_MESSAGEBOARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_ABOUTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_OPENTALKDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SETFLISTSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_EPICFAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BROWSERDLG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x3692, 0x0000, 0x233e, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_MESSAGEBOARD DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x3182, 0x0000, 0x2162, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0003, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREE_CLOSED         BITMAP                  "res\\tree_closed.bmp"
+IDB_TREE_OPENED         BITMAP                  "res\\tree_open.bmp"
+IDB_WBUTTONS            BITMAP                  "res\\wbuttons.bmp"
+IDB_ABOUT_HEADER        BITMAP                  "res\\about.bmp"
+IDB_ATT_AUDIO           BITMAP                  "res\\att_audio.bmp"
+IDB_ATT_PHOTO           BITMAP                  "res\\att_photo.bmp"
+IDB_ATT_VIDEO           BITMAP                  "res\\att_video.bmp"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\VkIM.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
